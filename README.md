@@ -13,17 +13,17 @@ Requirements:
 
 regression_test is a test script that sweeps across all benchmarks.
 
-To produce the accurate results for each benchmark
+To produce the accurate results for each benchmark:
 
 iverilog bench_test.v bench.v
 ./a.out > res_accurate
 
-To produce the approximate results for each benchmark
+To produce the approximate results for each benchmark:
 
 iverilog bench_test.v bench_approx.v
 ./a.out > res_approx
 
-To compare the results
+To compare the results:
 
 python3 ./bench_qor res_accurate res_approx
 
