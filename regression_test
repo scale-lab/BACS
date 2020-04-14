@@ -1,0 +1,14 @@
+#/bin/bash
+for cir in x2 b1 classifier fft mult16 adder32 sin dec
+do
+	echo -n ${cir} " "
+	cd ${cir}
+	iverilog ${cir}_test.v ${cir}.v
+	./a.out > res1
+        iverilog ${cir}_test.v ${cir}_approx.v
+        ./a.out > res2
+	python3 ${cir}_qor.py res1 res2
+	rm a.out
+#	rm res*
+	cd ..
+done

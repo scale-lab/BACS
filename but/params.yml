@@ -1,0 +1,27 @@
+
+# Gereric info
+input_file: '/home/soheil/Soheil/repos/new_bmf/clean_repo/blasys_private/benchmarks/but/but.v'
+testbench: '/home/soheil/Soheil/repos/new_bmf/clean_repo/blasys_private/benchmarks/but/but_tb.v'
+toplevel: 'but'
+err_thresh: 0.50
+output_dir: '/home/soheil/Soheil/repos/new_bmf/clean_repo/blasys_private/benchmarks/but/output'
+debug: false
+parallel_processing: false
+
+# Partitioner Variable
+lsoracle_path: '/home/soheil/Soheil/tools/LSOracle/build/core/lsoracle'
+partition_count: 4
+
+partitioned_file: '/home/soheil/Soheil/repos/new_bmf/clean_repo/blasys_private/benchmarks/but/but_parts.v'
+k_string: '5555'
+
+# Library Information
+liberty_file: '/home/soheil/Soheil/repos/new_bmf/clean_repo/blasys_private/asap7.lib'
+
+# Synthesis
+yosys_path: 'yosys'
+
+# Simulation
+iverilog_path: 'iverilog'
+vvp_path: 'vvp'
+error_metric: 'binary'
