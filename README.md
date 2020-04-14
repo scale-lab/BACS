@@ -1,7 +1,4 @@
-# BACS
-Benchmarks for Approximate Circuit Synthesis
-
-BACS: Benchmarks for Approximate Circuit Synthesis
+# BACS: Benchmarks for Approximate Circuit Synthesis
 
 Each benchmark circuits comes in its own folder with four files.
 
@@ -36,5 +33,9 @@ x2      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approxim
 b1      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
 mult16  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 adder32 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
-fft     8-point fast fourier transform circuit. Metrics: Mean Square Error (MSE). Approximate design generated using ABACUS.
-svm     A support vector machine classifier. Metrics: misclassifed lables (%). Approximate design generated using ABACUS.
+fft     8-point fast fourier transform circuit. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
+svm     A support vector machine classifier. Metric: misclassifed lables (%). Approximate design generated using ABACUS.
+sqrt    A square root circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
+sin     A sine circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
+dec     A decoder circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
+
