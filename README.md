@@ -7,7 +7,7 @@ The included benchmarks are
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
 - **fft:**     8-point fast fourier transform circuit from ABACUS releasee. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
-- **classifier:**     A support vector machine classifier from ABACUS release.  Metric: misclassifed lables (%). Approximate design generated using ABACUS.
+- **classifier:**     A support vector machine classifier from ABACUS release.  Metric: misclassified labels (%). Approximate design generated using ABACUS.
 - **sqrt:**    A square root circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 - **sin:**     A sine circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 - **dec:**     A decoder circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
