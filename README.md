@@ -6,8 +6,8 @@ The included benchmarks are
 - **b1:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
-- **fft:**     8-point fast fourier transform circuit from ABACUS benchmarks. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
-- **classifier:**     A support vector machine classifierfrom ABACUS benchmarks.  Metric: misclassifed lables (%). Approximate design generated using ABACUS.
+- **fft:**     8-point fast fourier transform circuit from ABACUS releasee. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
+- **classifier:**     A support vector machine classifier from ABACUS release.  Metric: misclassifed lables (%). Approximate design generated using ABACUS.
 - **sqrt:**    A square root circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 - **sin:**     A sine circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 - **dec:**     A decoder circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
