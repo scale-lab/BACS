@@ -13,7 +13,7 @@ The included benchmarks are
 - **dec:**     A decoder circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 
 
-Each benchmark circuit comes in its own folder with four files.
+Each benchmark circuit comes in its own folder with four files:
 
 - bench/bench.v           original design in Verilog
 - bench/bench_test.v      testbench for the design in Verilog
@@ -26,17 +26,17 @@ Each benchmark circuit comes in its own folder with four files.
 
 
 **Usage:** 
-To produce the accurate results for each benchmark:
+- To produce the accurate results for each benchmark:
 
 iverilog bench_test.v bench.v
 ./a.out > res_accurate
 
-To produce the approximate results for each benchmark:
+- To produce the approximate results for each benchmark:
 
 iverilog bench_test.v bench_approx.v
 ./a.out > res_approx
 
-To compare the results:
+- To compare the results:
 
 python3 ./bench_qor res_accurate res_approx
 
