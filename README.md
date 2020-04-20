@@ -3,7 +3,6 @@
 The included benchmarks are
 
 - **x2:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
-- **b1:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
 - **fft:**     8-point fast fourier transform  sequential circuit from ABACUS release. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
