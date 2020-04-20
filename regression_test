@@ -1,14 +1,14 @@
 #/bin/bash
-for cir in x2 b1 classifier fft mult16 adder32 sin dec
+for cir in x2 classifier fft mult16 adder32 sin dec mult8u buttfly abs_diff
 do
 	echo -n ${cir} " "
 	cd ${cir}
 	iverilog ${cir}_test.v ${cir}.v
-	./a.out > res1
+	./a.out > acc_res
         iverilog ${cir}_test.v ${cir}_approx.v
-        ./a.out > res2
-	python3 ${cir}_qor.py res1 res2
+        ./a.out > approx_res
+	python3 ${cir}_qor.py acc_res approx_res
 	rm a.out
-#	rm res*
+	rm *res*
 	cd ..
 done
