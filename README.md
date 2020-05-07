@@ -3,16 +3,14 @@
 The included benchmarks are
 
 - **x2:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
+- **mac:**    multiply-add arithmetic circuit. Approximate design generated using BLASYS.
 - **buttfly:**      butterfly structure. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
-- **absdiff:**      absolute difference arithmetic circuit. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
+- **abs_diff:**      absolute difference arithmetic circuit. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 - **mult8u:**  8-bit unsigned multiplier from EvoApproxLib. Metric: Mean Absolute Error (MAE). Approximate design generatered using EvoApproxLib.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
 - **fft:**     8-point fast fourier transform  sequential circuit from ABACUS release. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
 - **classifier:**     A support vector machine classifier sequential circuit from ABACUS release.  Metric: misclassified labels (%). Approximate design generated using ABACUS.
-- **sqrt:**    A square root circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
-- **sin:**     A sine circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
-- **dec:**     A decoder circuit from the EPFL benchmark set. Metric: HD. Approximate design generated using BLASYS.
 
 
 Each benchmark circuit comes in its own folder with four files:
