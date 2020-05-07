@@ -20,4 +20,4 @@ def HD(original_path, approximate_path):
     return HD/total
 
 hd=HD(sys.argv[1], sys.argv[2])
-print('HD ',hd)
+print('HD % ',100*hd)

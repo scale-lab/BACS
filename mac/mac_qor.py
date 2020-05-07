@@ -13,10 +13,10 @@ def dataCompare(Groundtruth, Modified):
         Ground_truth = data.readlines()
     L = min (len(Modified_data), len(Ground_truth))
     temp = 0
-    maxv=2**16-1
+    maxv=2**8-1
     for i in range(0, L):
         temp= temp+abs(float(Modified_data[i]) - float(Ground_truth[i]))/maxv
-    print('MAE ', 100*temp/L)
+    print('MAE %', 100*temp/L)
     return temp/L
 
 dataCompare(sys.argv[1], sys.argv[2])

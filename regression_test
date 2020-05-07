@@ -1,5 +1,5 @@
 #/bin/bash
-for cir in x2 classifier fft mult16 adder32 sin dec mult8u buttfly abs_diff
+for cir in x2 classifier fft mult16 adder32 mac mult8u buttfly abs_diff
 do
 	echo -n ${cir} " "
 	cd ${cir}

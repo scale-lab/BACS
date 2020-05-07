@@ -15,7 +15,7 @@ def dataCompare(Groundtruth, Modified):
     temp = 0
     for i in range(0, L):
         temp = temp + abs(float(Modified_data[i-1]) - float(Ground_truth[i-1]))/(2**8-1)
-    print('MAE ', 100*temp/L)
+    print('MAE %', 100*temp/L)
     return temp/L
 
 dataCompare(sys.argv[1], sys.argv[2])

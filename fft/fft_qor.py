@@ -74,12 +74,12 @@ def FFT_QOR(out_txt, sec_text):
 		#data_4 = [x*x for x in [l.real for l in y_ifft_org]]
 		data_4 = [x*x for x in amplitude_org]
 		fft_mse[k-1] = (numpy.mean(diff_square)/numpy.mean(data_4))*100
-		print('MSE %f'% fft_mse[k-1])
+		print('MSE  % ', fft_mse[k-1])
 		if (fft_mse[k-1] >= thresh):
 			print ("fail")
 			return
 		fft_accuracy = 100 - fft_mse
 		return fft_accuracy
 
-qor=FFT_QOR(sys.argv[1], sys.argv[2])
+FFT_QOR(sys.argv[1], sys.argv[2])
 #print(qor)

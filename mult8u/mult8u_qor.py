@@ -1,32 +1,22 @@
-import numpy as np
+#!/usr/bin/python
+import os
+import math
+import numpy
 import sys
 
-def MAE(original_path, approximate_path):
-    with open(original_path, 'r') as fo:
-        org_line_list = fo.readlines()
-    with open(approximate_path, 'r') as fa:
-        app_line_list = fa.readlines()
-    
-    org = [list(filter(lambda a: a != ' ', list(i[:-1]))) for i in org_line_list]
-    app = [list(filter(lambda a: a != ' ', list(i[:-1]))) for i in app_line_list]
+def dataCompare(Groundtruth, Modified):
+    if (os.path.exists(Modified)):
+        data = open(Modified)
+        Modified_data = data.readlines()
+    if (os.path.exists(Groundtruth)):
+        data = open(Groundtruth)
+        Ground_truth = data.readlines()
+    L = min (len(Modified_data), len(Ground_truth))
+    temp = 0
+    maxv=2**16-1
+    for i in range(0, L):
+        temp= temp+abs(float(Modified_data[i]) - float(Ground_truth[i]))/maxv
+    print('MAE % ', 100*temp/L)
+    return temp/L
 
-    if len(org_line_list) != len(app_line_list):
-        print('ERROR! sizes of input files are not equal! Aborting...')
-        return -1
-
-    num_vec = len(org)
-    num_pos = len(org[0])
-
-    maxnum = 2 ** num_pos - 1
-
-    err = []
-
-    for i in range(num_vec):
-        orgnum = int(''.join(org[i]), 2)
-        appnum = int(''.join(app[i]), 2)
-        err.append( np.abs(orgnum - appnum) )
-
-    return np.mean(err) / maxnum
-
-res=MAE(sys.argv[1], sys.argv[2])
-print('MAE (%)', 100*res)
+dataCompare(sys.argv[1], sys.argv[2])
