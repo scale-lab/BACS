@@ -1,5 +1,9 @@
 # BACS: Benchmarks for Approximate Circuit Synthesis
 
+These bencmarks are released as part of the following **under-review** publication
+
+I. Scarabottolo, G. Ansaloni, G. A. Constantinides, L. Pozzi and S. Reda "Approximate Logic Synthesis: A Survey" **under-review** in Proceedings of the IEEE.
+
 The included benchmarks are
 
 - **x2:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
