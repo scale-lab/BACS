@@ -17,7 +17,7 @@
 
 
 
-module mul8u(A, B, O);
+module mul8(A, B, O);
   input [7:0] A;
   input [7:0] B;
   output [15:0] O;
