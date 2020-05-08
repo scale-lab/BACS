@@ -1,7 +1,7 @@
 module mul8u_test;
 reg [15:0] pi;
 wire [15:0] po;
-mul8u dut( pi[7:0] , pi[15:8] , po[15:0] );
+mul8 dut( pi[7:0] , pi[15:8] , po[15:0] );
 initial
 begin
 # 1  pi=16'b0000000000000000;
