@@ -1,4 +1,4 @@
-module abs_diff_approx ( 
+module abs_diff ( 
     a, b, r);
 input [7:0] a; 
 input [7:0] b;
