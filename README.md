@@ -7,7 +7,7 @@ The included benchmarks are
 - **buttfly:**      butterfly structure. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
 - **abs_diff:**      absolute difference arithmetic circuit. Metric: Mean Absolute Error (MAE). Approximate design is generated using Circuit Carving (CC) technique.
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
-- **mult8u:**  8-bit unsigned multiplier from EvoApproxLib. Metric: Mean Absolute Error (MAE). Approximate design generatered using EvoApproxLib.
+- **mult8:**  8-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using EvoApproxLib.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
 - **fft:**     8-point fast fourier transform  sequential circuit from ABACUS release. Metric: Mean Square Error (MSE). Approximate design generated using ABACUS.
 - **classifier:**     A support vector machine classifier sequential circuit from ABACUS release.  Metric: misclassified labels (%). Approximate design generated using ABACUS.
