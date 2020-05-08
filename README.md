@@ -5,7 +5,7 @@ The included benchmarks are
 - **x2:**      small benchmark from LGSynth 91. Metric: Hamming Distance (HD). Approximate design generated using BLASYS.
 - **mac:**    multiply-add arithmetic circuit. Approximate design generated using BLASYS.
 - **buttfly:**      butterfly structure. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
-- **abs_diff:**      absolute difference arithmetic circuit. Metric: Mean Absolute Error (MAE). Approximate design is same as exact.
+- **abs_diff:**      absolute difference arithmetic circuit. Metric: Mean Absolute Error (MAE). Approximate design is generated using Circuit Carving (CC) technique.
 - **mult16:**  16-bit unsigned multiplier. Metric: Mean Absolute Error (MAE). Approximate design generatered using DRUM.
 - **mult8u:**  8-bit unsigned multiplier from EvoApproxLib. Metric: Mean Absolute Error (MAE). Approximate design generatered using EvoApproxLib.
 - **adder32:** 32-bit adder. Metric: Mean Absolute Error (MAE). Approximate design generatered manually.
