@@ -15,7 +15,7 @@
 // PDK45_AREA = 427.5 um2
 // PDK45_DELAY = 1.41 ns
 
-module mul8u(
+module mul8(
     A,
     B,
     O
