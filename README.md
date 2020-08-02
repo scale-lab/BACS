@@ -1,6 +1,6 @@
 # BACS: Benchmarks for Approximate Circuit Synthesis (version 1.0)
 
-These benchmarks are released as part of the following **under-review** publication. 
+These benchmarks are released as part of the following accepted publication. 
 
 I. Scarabottolo, G. Ansaloni, G. A. Constantinides, L. Pozzi and S. Reda "Approximate Logic Synthesis: A Survey" **under-review** in Proceedings of the IEEE.
 
